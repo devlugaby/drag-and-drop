@@ -1,63 +1,37 @@
-.container {
-    display: flex;
-    justify-content: space-between;
-    width: 80%;
-    margin: 0 auto;
-}
-
-.column {
-    flex: 1;
-    padding: 20px;
-    background-color: #f0f0f0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    text-align: center;
-}
-
-.logo {
-    width: 150px;
-    height: 100px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    margin: 10px 0;
-    cursor: pointer;
-    text-align: center;
-}
-
-.desc {
-    width: 150px;
-    height: 100px;
-    background-color: #fff;
-    border: 1px solid #ccc;
-    margin: 10px 0;
-    text-align: center;
-    padding-top: 40px;
-}
-
-#div1, #div2, #div3 {
+div{
+    border: 2px solid black;
+    width: 30%;
+    height: 30%;
+    padding: 80px;
     float: left;
-    width: 100px;
-    height: 35px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
+
 }
 
-#div3, #div4 {
-    float: left;
-    width: 100px;
-    height: 35px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
+.div2{
+   border: 2px solid black;
+   width: 30%;
+   height: 30%;
+   padding: 80px;
+   float: left;
+   font-size: medium;
 }
 
-#div5, #div6 {
-    float: right;
-    width: 100px;
-    height: 35px;
-    margin: 10px;
-    padding: 10px;
-    border: 1px solid black;
-}
+.angry-grid {
+   display: grid; 
 
+   grid-template-rows: 1fr 1fr 1fr;
+   grid-template-columns: 1fr 1fr;
+   
+   grid-template-areas:
+	'. .'
+	'. .'
+	'. .';
+   
+   gap: 10px;
+   height: 100%;
+   width: 50%;
+}
+  
+
+
+  
